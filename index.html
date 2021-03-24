@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body{
+            font-family: sans-serif;
+            font-weight: 100;
+            background-color: rgb(241, 176, 169);
+            color: rgb(130, 240, 130);
+            text-shadow: 1px 2px green;
+        }
+        .line-one {
+            
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+}
+  
+        input{
+            background-color: rgb(218, 238, 218);
+            border: none;
+            margin: 5px;
+            
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" class="rel" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <header><h1>CALCULATION X</h1></header>
+    <div class="basic">
+      <h1>Basic Aritmethic</h1>
+      <div class="line-one">
+        <input type="number" placeholder="0"  class="box add" />
+        <h1><span>+</span></h1>
+        <input type="number" placeholder="0"  class="box add" />
+        <h1><span>=</span></h1>
+        <input type="number"  placeholder="0" readonly class="answer answer1" />
+      </div>
+      <br />
+      <div class="line-one">
+        <input type="number" placeholder="0"  class="subtract" />
+        <h1><span>-</span></h1>
+        <input type="number" placeholder="0"  class="subtract" />
+        <h1><span>=</span></h1>
+        <input type="number"  placeholder="0" readonly class="answer answer2" />
+      </div><br />
+      <div class="line-one">
+        <input type="number" placeholder="0"  class="multiply" />
+        <h1><span>&times;</span></h1><input type="number" placeholder="0"  class="multiply" />
+        <h1><span>=</span></h1>
+        <input type="number" placeholder="0"  readonly class="answer answer3" />
+    </div><br />
+    <div class="line-one">
+        <input type="number" placeholder="0" class="divide" />
+        <h1><span>÷</span></h1>
+        <input type="number" placeholder="0"  class="divide" />
+        <h1><span>=</span></h1>
+        <input type="number" placeholder="0"  readonly class="answer answer4" />
+      </div><br />
+      <header><h1>Special Operations</h1></header>
+      <h1>Modulo</h1>
+
+      <div class="line-one">
+        <input type="number" placeholder="0"  class="box modulo" />
+        <h1><span>+</span></h1>
+        <input type="number"  placeholder="0" class="box modulo" />
+        <h1><span>=</span></h1>
+        <input type="number" placeholder="0"  readonly class="answer answer5" />
+      </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
